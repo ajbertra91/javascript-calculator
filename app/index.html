@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Random Quote Generator</title>
+  <title>JS Calculator</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <style>
     body {
@@ -17,17 +17,41 @@
   </style>
 </head>
 <body id="body">
-  <div id="main" class="container">
-    <h1 id="title">Random Quote Machine</h1>
-    <div id="current-quote">
-      <div id="text"></div>
-      <div id="source"></div>
+  <div id="calculator" class="container">
+    <div class="row">
+      <div id="display" class="col-xs-12" data-value="display">0</div>
     </div>
-    <a href="" id="twitter-action"></a>
-    <button id="action" type="button">Next</button>
+    <div class="row">
+      <div class="button btn btn-default col-xs-3" data-value="allclear">AC</div>
+      <div class="button btn btn-default col-xs-3" data-value="pos-neg">+/-</div>
+      <div class="button btn btn-default col-xs-3" data-value="percent">%</div>
+      <div class="button btn btn-default col-xs-3" data-value="/">&#247;</div>
+    </div>
+    <div class="row">
+      <div class="button number btn btn-default col-xs-3" data-value="7">7</div>
+      <div class="button number btn btn-default col-xs-3" data-value="8">8</div>
+      <div class="button number btn btn-default col-xs-3" data-value="9">9</div>
+      <div class="button btn btn-default col-xs-3" data-value="*">&#215;</div>
+    </div>
+    <div class="row">
+      <div class="button number btn btn-default col-xs-3" data-value="4">4</div>
+      <div class="button number btn btn-default col-xs-3" data-value="5">5</div>
+      <div class="button number btn btn-default col-xs-3" data-value="6">6</div>
+      <div class="button btn btn-default col-xs-3" data-value="-">-</div>
+    </div>
+    <div class="row">
+      <div class="button number btn btn-default col-xs-3" data-value="1">1</div>
+      <div class="button number btn btn-default col-xs-3" data-value="2">2</div>
+      <div class="button number btn btn-default col-xs-3" data-value="3">3</div>
+      <div class="button btn btn-default col-xs-3" data-value="+">+</div>
+    </div>
+    <div class="row">
+      <div class="button btn btn-default col-xs-6" data-value="0">0</div>
+      <div class="button btn btn-default col-xs-3" data-value=".">.</div>
+      <div class="button btn btn-default col-xs-3" data-value="=">=</div>
+    </div>
   </div>
 
-  <script src="http://platform.twitter.com/widgets.js"></script>
   <script src="./bundle.js"></script>
 </body>
 </html>

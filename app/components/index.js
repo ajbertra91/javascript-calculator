@@ -1,1 +1,1 @@
-require('./quotes.js');
+require('./calculator.js');
