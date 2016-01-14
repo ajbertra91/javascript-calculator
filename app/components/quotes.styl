@@ -1,0 +1,57 @@
+$actionBgColor = hsla(200,75%,50%,1)
+$actionBorderColor = hsla(200,75%,40%,1)
+$actionTextColor = hsla(0,0%,100%,1)
+$textColor = hsla(167,100%,46%, 1)
+$textBgColor = hsla(169,100%,25%,1)
+
+
+
+//handheld
+@media only screen and (min-width: 320px)
+  #text
+    font-size: 22px
+  #current-quote
+    color: $textBgColor
+    padding: 30px
+    border-radius: 3px
+    height: 411px
+  #text
+    font-weight: 100
+    transition: opacity 300ms ease-in
+    color: $textColor
+  #action
+    background: $actionBgColor
+    border: 2px solid $actionBorderColor
+    border-radius: 3px
+    color: $actionTextColor
+    padding: 10px 20px
+    display: inline-block
+    vertical-align: top
+  #twitter-action
+    background: url('../images/twitter-512.gif') 50% 50% no-repeat, $actionBgColor
+    background-size: 70% auto
+    border: 2px solid $actionBorderColor
+    border-radius: 50%
+    display: inline-block
+    width: 44px
+    height: 44px
+    margin-right: 20px
+//tablet
+@media only screen and (min-width: 600px)
+  #current-quote
+    min-height: 350px
+  #text
+    font-size: 28px
+
+@media only screen and (min-width: 1250px)
+  #current-quote
+    min-height: 215px
+    height: auto
+
+  #text
+    font-size: 32px
+  #twitter-action
+    cursor: pointer
+
+
+

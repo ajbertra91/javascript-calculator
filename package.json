@@ -1,0 +1,30 @@
+{
+  "name": "stamp_it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "faucet tests/*.js",
+    "start": "node node_modules/.bin/webpack-dev-server --content-base app"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "stampit": "^2.1.1",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.4.2",
+    "tape": "^4.4.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}
